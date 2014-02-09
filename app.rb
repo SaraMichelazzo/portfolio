@@ -37,3 +37,8 @@ get '/truespirit' do
   @page = 'work'
   erb :truespirit
 end
+
+get '/iphoneapp' do
+  @page = 'work'
+  erb :iphoneapp
+end
