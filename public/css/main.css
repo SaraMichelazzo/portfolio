@@ -217,6 +217,23 @@ h4 {
 	padding-left: 30px;
 	padding-right: 30px;
 }
+
+.media-link {
+	display: block;
+	padding: 20px;
+	border: 1px solid #eee;
+
+	-webkit-transition: background 200ms ease-in-out;
+	-moz-transition: background 200ms ease-in-out;
+	-ms-transition: background 200ms ease-in-out;
+	-o-transition: background 200ms ease-in-out;
+	transition: background 200ms ease-in-out;
+}
+
+.media-link:hover {
+	background-color: #f7f7f7;
+	border: 1px solid #eee;
+}
 /* --- layout */
 
 /* ++++ icons */
