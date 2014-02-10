@@ -354,3 +354,34 @@ i.mail  {
 	width: 200px;
 }
 /* ---- mediaObject module */
+
+/* ++++ mediaObject module */
+.linkNavigation {
+	padding: 20px 5px;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.linkNavigation-elements {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 0;
+	font-size: 1.2em;
+}
+
+.linkNavigation:before, .linkNavigation:after {
+	content: " ";
+    display: table;
+}
+
+.linkNavigation:after {
+    clear: both;
+}
+
+.linkNavigation-prev {
+	float: left;
+}
+.linkNavigation-next {
+	float: right;
+}
+/* ---- mediaObject module */
