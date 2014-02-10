@@ -63,11 +63,15 @@ h4 {
 	padding-bottom: 50px;
 }
 
+.blockMargin-small-bottom{
+	margin-bottom: 20px;
+}
+
 .blockPadding-20px{
 	padding: 20px 0;
 }
 
-.background-lg{
+.background-lg {
 	background-color: #f7f7f7;
 	border:#eeeeee;
 }
@@ -87,6 +91,12 @@ h4 {
 	margin-top: 20px;
 	-webkit-box-shadow: 5px 5px 5px 2px #ccc;
 	box-shadow: 5px 5px 5px 2px #ccc;
+}
+
+.img-noborder {
+	max-width:100%;
+	margin-top: 20px;
+
 }
 
 .logo-link {
@@ -139,8 +149,8 @@ h4 {
 }
 
 .h1-best-works{
-	margin-top:0px;
-	margin-bottom:15px;
+	margin-top: 0px;
+	margin-bottom: 50px;
 }
 
 
@@ -216,23 +226,6 @@ h4 {
 .padding-lr-30 {
 	padding-left: 30px;
 	padding-right: 30px;
-}
-
-.media-link {
-	display: block;
-	padding: 20px;
-	border: 1px solid #eee;
-
-	-webkit-transition: background 200ms ease-in-out;
-	-moz-transition: background 200ms ease-in-out;
-	-ms-transition: background 200ms ease-in-out;
-	-o-transition: background 200ms ease-in-out;
-	transition: background 200ms ease-in-out;
-}
-
-.media-link:hover {
-	background-color: #f7f7f7;
-	border: 1px solid #eee;
 }
 /* --- layout */
 
@@ -335,3 +328,29 @@ i.mail  {
 	border-bottom: none;
 }
 /* ---- floated list */
+
+
+/* ++++ mediaObject module */
+.mediaObject {
+	display: block;
+	padding: 20px;
+	border: 1px solid #eee;
+	-webkit-transition: background 200ms ease-in-out;
+	-moz-transition: background 200ms ease-in-out;
+	-ms-transition: background 200ms ease-in-out;
+	-o-transition: background 200ms ease-in-out;
+	transition: background 200ms ease-in-out;
+}
+.mediaObject:hover {
+	background-color: #f7f7f7;
+	border: 1px solid #eee;
+}
+
+.mediaObject-imgContainer {
+	text-align: center;
+}
+
+.mediaObject-img {
+	width: 200px;
+}
+/* ---- mediaObject module */
