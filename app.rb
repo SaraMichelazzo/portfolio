@@ -18,9 +18,9 @@ get '/about' do
   erb :about
 end
 
-get '/SolairPlmUX' do
+get '/solairplmux' do
   @page = 'work'
-  erb :SolairPlmUX
+  erb :solairplmux
 end
 
 get '/linkedin' do
@@ -28,9 +28,9 @@ get '/linkedin' do
   erb :linkedin
 end
 
-get '/SolairSite' do
+get '/solairsite' do
   @page = 'work'
-  erb :SolairSite
+  erb :solairsite
 end
 
 get '/truespirit' do
@@ -41,4 +41,9 @@ end
 get '/iphoneapp' do
   @page = 'work'
   erb :iphoneapp
+end
+
+get '/gocatch' do
+  @page = 'work'
+  erb :gocatch
 end
