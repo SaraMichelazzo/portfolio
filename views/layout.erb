@@ -24,15 +24,15 @@
       <nav class="container">
         <div class="row">
           <div class="col-md-8 textAlign-md-center">
-            <p><a href="index" class='logo-link'><img src="images/heart.png" alt="sara michelazzo logo" class="hidden-md-inline img-responsive logo"/></a><span class="padding-left-15"><strong>Sara Michelazzo</strong> is a User Experience Designer based in Sydney</span></p>
-            <a href="index" class='logo-link visible-sm visible-xs'>
+            <p><a href="index" class='logo-link noBorder'><img src="images/heart.png" alt="sara michelazzo logo" class="hidden-md-inline img-responsive logo"/></a><span class="padding-left-15"><strong>Sara Michelazzo</strong> is a User Experience Designer based in Sydney</span></p>
+            <a href="index" class='logo-link visible-sm visible-xs noBorder'>
               <img src="images/heart.png" alt="sara michelazzo logo" class="visible-md-inline img-responsive logo" />
             </a>
           </div>
           <div class="col-md-4">
             <ul class="section-menu section-menu-margin20 textAlign-md-center textAlign-lg-right">
-              <li class="section-menu-item"><a href="index" <%= 'class="active"' if @page == 'work' %>>Work.</a></li>
-              <li class="section-menu-item"><a href="about" <%= 'class="active"' if @page == 'about' %>>About.</a></li>
+              <li class="section-menu-item"><a href="index" class="noBorder <%= "active" if @page == 'work' %>">Work.</a></li>
+              <li class="section-menu-item"><a href="about" class="noBorder <%= "active" if @page == 'about' %>">About.</a></li>
             </ul>
           </div>
         </div>  
@@ -52,10 +52,10 @@
       </div>
       <div class="darkBackground">
         <div class="blockPadding-50-top position-relative">
-          <a id="returnUp" href="#" class="position-top-right square link-no-hover"><img src="images/up.png"/></a>
+          <a id="returnUp" href="#" class="position-top-right square link-no-hover noBorder"><img src="images/up.png"/></a>
           <ul class="section-menu section-menu-margin20 textAlign-md-center">
-            <li class="section-menu-item"><a class="light active" href="index">Work.</a></li>
-            <li class="section-menu-item"><a class="light" href="about">About.</a></li>
+            <li class="section-menu-item"><a class="light noBorder <%= "active" if @page == 'work' %>" href="index">Work.</a></li>
+            <li class="section-menu-item"><a class="light noBorder <%= "active" if @page == 'about' %>" href="about">About.</a></li>
           </ul>
         </div>
         <p class="copyright blockPadding-50-top">Website and content &copy; copyright 2013 Sara Michelazzo. <br>
