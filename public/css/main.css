@@ -360,7 +360,7 @@ i.mail  {
 	-ms-transition: background 200ms ease-in-out;
 	-o-transition: background 200ms ease-in-out;
 	transition: background 200ms ease-in-out;
-	height: 400px;
+	height: 420px;
 }
 .mediaObject-noHeight {
 	height: auto;
