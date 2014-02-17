@@ -20,7 +20,7 @@ end
 
 get '/solairplmux' do
   @page = 'work'
-  erb :solairplmux
+  erb :solairux
 end
 
 get '/linkedin' do
@@ -30,7 +30,7 @@ end
 
 get '/solairsite' do
   @page = 'work'
-  erb :solairsite
+  erb :solairwebsite
 end
 
 get '/truespirit' do
