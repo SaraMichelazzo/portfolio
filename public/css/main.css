@@ -208,6 +208,7 @@ border-radius: 5px 5px 5px 5px;
 	font-size: 20px;
 }
 
+
 .pinktype{
 	color:#D6516B;
 }
@@ -553,3 +554,18 @@ i.up  {
 	}
 }
 /* ---- like module */
+
+
+/* ++++ footer */
+
+.albyFooter {
+	color: #f0f0f0;
+	line-height: 20px;
+	font-weight: 500;
+}
+
+.albyFooter:hover {
+	color: #f0f0f0;
+}
+
+/* ---- footer */
