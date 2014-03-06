@@ -3,6 +3,8 @@
   <head>
     <title>User Experience Design Portfolio of Sara Michelazzo</title>
     <meta name="description" content="Sara Michelazzo is a User Experience Designer based in Sydney. She loves User Research, Sketching and Interaction Design for mobile and the web.">
+    <meta name="keywords" content="User Experience Design Portfolio, UX Portfolio, User Experience Portfolio, User Research, Contextual Inquiries, Interaction Design, Information Architecture, User Interface Design, Usability Testing, Interviews, Surveys, Card Sorting, Participatory Design, Task Analysis, Rapid Prototyping, Heuristic Evaluation, Content Analysis, Personas, Wireframes, Competitive Analysis, Empathy Maps, Scenarios, User Journeys, Storyboards, Task Flows, Storytelling, Sketching, Axure, InVision, POP, Balsamiq, OmniGraffle">
+    <meta name="author" content="Sara Michelazzo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->    
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
@@ -25,7 +27,7 @@
   <body class="">
     <div id="navigationMenu">
       <nav class="container">
-        <div class="row">
+        <div class="row blockPadding-20px">
           <div class="col-md-8 textAlign-md-center">
             <p><a href="index" class='logo-link noBorder'><img src="images/heart.png" alt="sara michelazzo logo" class="hidden-md-inline img-responsive logo"/></a><span class="padding-left-15"><strong>Sara Michelazzo</strong> is a User Experience Designer based in Sydney</span></p>
             <a href="index" class='logo-link visible-sm visible-xs noBorder'>
@@ -44,25 +46,25 @@
 
     <%= yield %>
 
-    <footer id="mainFooter" class="background-lg">
+    <footer id="mainFooter" class="background-lg-border ">
       <div class="blockPadding-50">
         <h1 class="center">Get in touch</h1>
         <ul class="floated-list blockPadding-50px">
-          <li class="floated-list-item"><a href= "mailto:sara.michelazzo@yahoo.it"><i class="mail"></i></a></li>
+          <li class="floated-list-item"><a href= "mailto:hello@saramichelazzo.com"><i class="mail"></i></a></li>
           <li class="floated-list-item"><a href="https://www.behance.net/saramichelazzo"><i class="behance"></i></a></li>
           <li class="floated-list-item"><a href="http://www.linkedin.com/pub/sara-michelazzo/21/605/87"><i class="linkedin"></i></a></li>
         </ul>
       </div>
       <div class="darkBackground">
         <div class="blockPadding-50-top position-relative">
-          <a id="returnUp" href="#" class="position-top-right square link-no-hover noBorder"><img src="images/up.png"/></a>
+          <a id="returnUp" href="#" class="position-top-right square link-no-hover noBorder"><i class='up'></i></a>
           <ul class="section-menu section-menu-margin20 textAlign-md-center">
             <li class="section-menu-item"><a class="light noBorder <%= "active" if @page == 'work' %>" href="index">Work.</a></li>
             <li class="section-menu-item"><a class="light noBorder <%= "active" if @page == 'about' %>" href="about">About.</a></li>
           </ul>
         </div>
         <p class="copyright blockPadding-50-top">Website and content &copy; copyright 2013 Sara Michelazzo. <br>
-            This website was designed and coded by me with love.</p>
+            <span class="whitetype">This website was designed and coded by me with love.</span></p>
       </div>
     </footer>
 

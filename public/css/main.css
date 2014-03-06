@@ -30,6 +30,10 @@ a.light, a.light.active, a.light:hover  {
 	color: #ffffff;
 }
 
+li,p > a {
+		line-height: 30px;
+	}
+
 h1 {
 	font-family: 'Patua One', cursive;
 	font-size: 4em;
@@ -51,6 +55,16 @@ h4 {
 	font-size: 2em;
 	text-transform: uppercase;
 	padding-top: 15px;
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
 }
 
 
@@ -79,9 +93,23 @@ h4 {
 	padding-bottom: 20px;
 }
 .background-lg {
-	background-color: #f7f7f7;
-	border:#eeeeee;
+	background-color: #f0f0f0;
 }
+
+.background-lg-border {
+	background-color: #f0f0f0;
+	border-top: 1px solid #e1e1e1;
+}
+
+.background-lightblue {
+	background-color: #99f0df;
+}
+
+.background-yellow {
+	background-color: #ffd602;
+}
+
+
 
 .borderbottom {
 	border-bottom: 1px solid #333;
@@ -100,10 +128,18 @@ h4 {
 	box-shadow: 5px 5px 5px 2px #ccc;
 }
 
+.img-about {
+	max-width:100%;	
+}
+
 .img-noborder {
 	max-width:100%;
 	margin-top: 20px;
 
+}
+
+.img-cover {
+	background-size: cover;
 }
 
 .logo-link {
@@ -157,6 +193,31 @@ border-radius: 5px 5px 5px 5px;
 
 .h4-bigger {
 	font-size:3em;
+}
+
+
+.font-pacifico-big{
+	font-family: 'Pacifico', cursive;
+	font-size: 38px;
+	line-height: inherit;
+	padding-bottom: 20px;
+}
+
+.font-pacifico-small{
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+}
+
+.pinktype{
+	color:#D6516B;
+}
+
+.graytype{
+	color:#cccccc;
+}
+
+.whitetype{
+	color:#f0f0f0;
 }
 
 .h1-best-works{
@@ -216,28 +277,15 @@ border-radius: 5px 5px 5px 5px;
 	padding-left:15px;
 }
 
-.font-pacifico-big{
-	font-family: 'Pacifico', cursive;
-	font-size: 50px;
-}
-
-.font-pacifico-small{
-	font-family: 'Pacifico', cursive;
-	font-size: 20px;
-}
-
-.pinktype{
-	color:#D6516B;
-}
-
-.graytype{
-	color:#cccccc;
-}
 
 .container-small {
 	max-width: 600px;
 }
 
+.containter910px{
+	max-width: 910px;
+	margin:0 auto;
+}
 
 .center {
 	text-align: center;
@@ -263,6 +311,7 @@ i {
   display: inline-block;
   cursor: pointer;
 }
+
 i.behance:hover  {
   background-position: 0px 0px;
   height: 70px;
@@ -293,6 +342,17 @@ i.mail  {
   height: 70px;
   width: 70px;
 }
+i.up:hover  {
+  background-position: -420px 0px;
+  height: 50px;
+  width: 50px;
+}
+i.up  {
+  background-position: -470px 0px;
+  height: 50px;
+  width: 50px;
+}
+
 /* ---- icons */
 
 .hidden-md-inline {
@@ -375,7 +435,7 @@ i.mail  {
 }
 
 .mediaObject:hover {
-	background-color: #f7f7f7;
+	background-color: #b9efe5;
 	border: 1px solid #32bcb9;
 }
 
@@ -438,3 +498,58 @@ i.mail  {
 	float: right;
 }
 /* ---- mediaObject module */
+
+/* ++++ textImage module */
+.textImage {
+	float: left;
+}
+
+.textImage-text {
+	width: 60%;
+}
+
+.textImage-text > p {
+	font-size: 35px;
+	font-weight: 600;
+	padding-left: 100px;
+	padding-top: 50px;
+	padding-right:20px;
+}
+
+.textImage-image {
+	width: 40%;
+}
+
+.textImage-image > img {
+	width: 100%;
+}
+
+@media (max-width: 960px) {
+	.textImage {
+		width: 100%;
+	}
+
+	.textImage-text > p {
+		font-size: 30px;
+		padding-left: 0;
+		text-align: center;
+		padding: 50px 10px;
+	}
+}
+/* ---- textImage module */
+
+
+/* ++++ like module */
+
+
+@media (max-width: 767px) {
+	.like-subtitle {
+		text-align: center;
+	}
+	.like-text {
+		width: 300px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+}
+/* ---- like module */
