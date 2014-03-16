@@ -696,4 +696,13 @@ i.wordpress  {
 		margin-bottom: 0px;
 	}
 }
+
+@media (max-width: 500px) {
+	.social {
+		width: 100%;
+	}
+	.social-hide-xs {
+		display: none;
+	}
+}
 /* ---- like module */
