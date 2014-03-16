@@ -304,6 +304,11 @@ border-radius: 5px 5px 5px 5px;
 	padding-left: 30px;
 	padding-right: 30px;
 }
+
+.padding-lr-100 {
+	padding-left: 100px;
+	padding-right: 100px;
+}
 /* --- layout */
 
 /* ++++ icons */
@@ -323,37 +328,127 @@ i.behance  {
   height: 70px;
   width: 70px;
 }
-i.linkedin:hover  {
+i.delicious:hover  {
   background-position: -140px 0px;
   height: 70px;
   width: 70px;
 }
-i.linkedin  {
+i.delicious  {
   background-position: -210px 0px;
   height: 70px;
   width: 70px;
 }
-i.mail:hover  {
+i.github:hover  {
   background-position: -280px 0px;
   height: 70px;
   width: 70px;
 }
-i.mail  {
+i.github  {
   background-position: -350px 0px;
   height: 70px;
   width: 70px;
 }
-i.up:hover  {
+i.instagram:hover  {
   background-position: -420px 0px;
+  height: 70px;
+  width: 70px;
+}
+i.instagram  {
+  background-position: -490px 0px;
+  height: 70px;
+  width: 70px;
+}
+i.linkedin:hover  {
+  background-position: -560px 0px;
+  height: 70px;
+  width: 70px;
+}
+i.linkedin  {
+  background-position: 0px -70px;
+  height: 70px;
+  width: 70px;
+}
+i.mail:hover  {
+  background-position: -70px -70px;
+  height: 70px;
+  width: 70px;
+}
+i.mail  {
+  background-position: -140px -70px;
+  height: 70px;
+  width: 70px;
+}
+i.pinterest:hover  {
+  background-position: -210px -70px;
+  height: 70px;
+  width: 70px;
+}
+i.pinterest  {
+  background-position: -280px -70px;
+  height: 70px;
+  width: 70px;
+}
+i.prezi:hover  {
+  background-position: -350px -70px;
+  height: 70px;
+  width: 70px;
+}
+i.prezi  {
+  background-position: -420px -70px;
+  height: 70px;
+  width: 70px;
+}
+i.slideshare:hover  {
+  background-position: -490px -70px;
+  height: 70px;
+  width: 70px;
+}
+i.slideshare  {
+  background-position: -560px -70px;
+  height: 70px;
+  width: 70px;
+}
+i.twitter:hover  {
+  background-position: 0px -140px;
+  height: 70px;
+  width: 70px;
+}
+i.twitter  {
+  background-position: -70px -140px;
+  height: 70px;
+  width: 70px;
+}
+i.up:hover  {
+  background-position: -140px -140px;
   height: 50px;
   width: 50px;
 }
 i.up  {
-  background-position: -470px 0px;
+  background-position: -190px -140px;
   height: 50px;
   width: 50px;
 }
-
+i.vimeo:hover  {
+  background-position: 0px -210px;
+  height: 70px;
+  width: 70px;
+}
+i.vimeo  {
+  background-position: -70px -210px;
+  height: 70px;
+  width: 70px;
+}
+i.wordpress:hover  {
+  background-position: -140px -210px;
+  height: 70px;
+  width: 70px;
+}
+i.wordpress  {
+  background-position: -210px -210px;
+  height: 70px;
+  width: 70px;
+}
+ 
 /* ---- icons */
 
 .hidden-md-inline {
@@ -521,6 +616,18 @@ i.up  {
 	width: 40%;
 }
 
+.textImage-33 {
+	width: 33.33%;
+}
+
+.textImage-30 {
+	width: 30%;
+}
+
+.textImage-images {
+	width: 20%;
+}
+
 .textImage-image > img {
 	width: 100%;
 }
@@ -535,6 +642,10 @@ i.up  {
 		padding-left: 0;
 		text-align: center;
 		padding: 50px 10px;
+	}
+
+	.hide-photos {
+		display: none;
 	}
 }
 /* ---- textImage module */
@@ -569,3 +680,20 @@ i.up  {
 }
 
 /* ---- footer */
+
+
+/* ++++ get in touch & more works */
+.social {
+	width: 470px;
+	display: inline-block;
+	text-align: left;
+}
+
+@media (max-width: 1060px) {
+	.social {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 0px;
+	}
+}
+/* ---- like module */
