@@ -5,12 +5,17 @@ if development?
 end
 
 get '/' do
-  @page = 'work'
+  @js = ["index"]
   erb :index
 end
 
 get '/index' do
   redirect '/'
+end
+
+get '/work' do
+  @page = 'work'
+  erb :work
 end
 
 get '/about' do

@@ -710,3 +710,22 @@ i.wordpress  {
 	}
 }
 /* ---- like module */
+
+/* ++++ slide plugin module */
+.slide-block {
+    position: relative;
+    display: table;
+}
+
+.slide-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.slide-backgroundImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/* ---- slide plugin module */
