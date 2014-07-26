@@ -7,22 +7,6 @@ $('document').ready(function(){
     var $block = $('.slide-block');
     setDimension($block, win.width, win.height);
 
-    // set image-full as background image of the .block element
-    var $imageFull = $block.find('.slide-img-full');
-
-    $imageFull.each(function(){
-        var $image = $(this);
-        var $container = $(this).closest('.slide-block');
-
-        // hide image
-        $image.hide();
-
-        // set the image as background image of the .block container
-        $container
-            .css('background-image', "url('" + $image.attr('src') +"')")
-            .addClass('slide-backgroundImage');
-    });
-
     $(window).on('resize', function(){
         win = getDimensions(window);
 
@@ -38,8 +22,9 @@ function getDimensions(el) {
     if ($el.length === 0) throw new Error("the " + el + " is not in the DOM");
 
     return {
-        width:  $el.width(),
-        height: $el.height(),
+        width:      $el.width(),
+        height:     $el.height(),
+        scrollTop:  $el.scrollTop()
     }
 }
 
