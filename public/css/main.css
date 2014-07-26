@@ -67,6 +67,11 @@ h4 {
 	}
 }
 
+.text-book {
+	color: white;
+	font-size: 25px;
+	padding-left: 25px;
+}
 
 
 .blockPadding-50{
@@ -107,6 +112,14 @@ h4 {
 
 .background-yellow {
 	background-color: #ffd602;
+}
+
+.background-pink{
+	background-color:#de796e;
+}
+
+.background-blue{
+	background-color:#273547;
 }
 
 
