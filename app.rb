@@ -5,7 +5,7 @@ if development?
 end
 
 get '/' do
-  @js = ["skrollr.min", "index"]
+  @js = ["index"]
   erb :index
 end
 
