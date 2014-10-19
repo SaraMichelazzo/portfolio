@@ -739,7 +739,11 @@ i.wordpress  {
 
 /* ++++ slide plugin module */
 .slide-block {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     display: table;
 }
 

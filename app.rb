@@ -4,6 +4,12 @@ if development?
   require 'sinatra/reloader'
 end
 
+require 'coffee-script'
+
+get '/js/index.js' do
+  coffee :index
+end
+
 get '/' do
   @js = ["index"]
   erb :index
