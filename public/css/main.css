@@ -264,6 +264,10 @@ border-radius: 5px 5px 5px 5px;
 	color: #ffffff;
 }
 
+.lightBackground {
+	background-color: #ffffff;
+}
+
 .copyright {
 	font-size:12px;
 	margin-bottom:0px;
@@ -819,9 +823,9 @@ i.wordpress  {
 .arrow-center-icon {
 	position: relative;
 	-webkit-animation: bounce 5s infinite; /* Safari 4+ */
-  	-moz-animation:    bounce 5s infinite; /* Fx 5+ */
-  	-o-animation:      bounce 5s infinite; /* Opera 12+ */
-  	animation:         bounce 5s infinite; /* IE 10+, Fx 29+ */
+	-moz-animation: bounce 5s infinite; /* Fx 5+ */
+	-o-animation: bounce 5s infinite; /* Opera 12+ */
+	animation: bounce 5s infinite; /* IE 10+, Fx 29+ */
 }
 
 .carousel.slide .carousel-control {
@@ -829,37 +833,41 @@ i.wordpress  {
 	border: none;
 }
 
+50% {
+     transform: translate(100px, 100px);
+  }
+
 @-webkit-keyframes bounce {
-  0%   { top: 0; }
-  10%  { top: 20px; }
-  15%  { top: 10px; }
-  20%  { top: 20px; }
-  25%  { top: 0; }
-  100% { top: 0; }
+  0%   { transform: translate(0, 0); }
+  10%  { transform: translate(0, 20px); }
+  15%  { transform: translate(0, 10px); }
+  20%  { transform: translate(0, 20px); }
+  25%  { transform: translate(0, 0); }
+  100% { transform: translate(0, 0); }
 }
 @-moz-keyframes bounce {
-  0%   { top: 0; }
-  10%  { top: 20px; }
-  15%  { top: 10px; }
-  20%  { top: 20px; }
-  25%  { top: 0; }
-  100% { top: 0; }
+  0%   { transform: translate(0, 0); }
+  10%  { transform: translate(0, 20px); }
+  15%  { transform: translate(0, 10px); }
+  20%  { transform: translate(0, 20px); }
+  25%  { transform: translate(0, 0); }
+  100% { transform: translate(0, 0); }
 }
 @-o-keyframes bounce {
-  0%   { top: 0; }
-  10%  { top: 20px; }
-  15%  { top: 10px; }
-  20%  { top: 20px; }
-  25%  { top: 0; }
-  100% { top: 0; }
+  0%   { transform: translate(0, 0); }
+  10%  { transform: translate(0, 20px); }
+  15%  { transform: translate(0, 10px); }
+  20%  { transform: translate(0, 20px); }
+  25%  { transform: translate(0, 0); }
+  100% { transform: translate(0, 0); }
 }
 @keyframes bounce {
-  0%   { top: 0; }
-  10%  { top: 20px; }
-  15%  { top: 10px; }
-  20%  { top: 20px; }
-  25%  { top: 0; }
-  100% { top: 0; }
+  0%   { transform: translate(0, 0); }
+  10%  { transform: translate(0, 20px); }
+  15%  { transform: translate(0, 10px); }
+  20%  { transform: translate(0, 20px); }
+  25%  { transform: translate(0, 0); }
+  100% { transform: translate(0, 0); }
 }
 
 .fancyButton {
