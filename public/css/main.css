@@ -30,6 +30,10 @@ a.light, a.light.active, a.light:hover  {
 	color: #ffffff;
 }
 
+a.light-block {
+	display: block;
+}
+
 li,p > a {
 		line-height: 30px;
 	}
@@ -151,7 +155,7 @@ h4 {
 }
 
 .img-about {
-	max-width:100%;	
+	max-width:100%;
 }
 
 .img-noborder {
@@ -253,6 +257,11 @@ border-radius: 5px 5px 5px 5px;
 	background-color: #333333;
 	color: #ffffff;
 	text-align:center;
+}
+
+.transparentBackground {
+	background-color: transparent;
+	color: #ffffff;
 }
 
 .copyright {
@@ -474,7 +483,7 @@ i.wordpress  {
   height: 70px;
   width: 70px;
 }
- 
+
 /* ---- icons */
 
 .hidden-md-inline {
@@ -663,7 +672,7 @@ i.wordpress  {
 }
 
 @media (max-width: 960px) {
-	.textImage {
+	.textImage:not(.textImage-noResize) {
 		width: 100%;
 	}
 
@@ -737,14 +746,35 @@ i.wordpress  {
 }
 /* ---- like module */
 
+
 /* ++++ slide plugin module */
 .slide-block {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: table;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+	  display: table;
+}
+
+.slide-block-autoHeight {
+	height: auto;
+}
+
+.slide-block-animate-top {
+	-webkit-transition: top 0.5s ease;
+	-moz-transition: top 0.5s ease;
+	-ms-transition: top 0.5s ease;
+	-o-transition: top 0.5s ease;
+	transition: top 0.5s ease;
+}
+
+.slide-block-animate-left {
+	-webkit-transition: left 0.5s ease;
+	-moz-transition: left 0.5s ease;
+	-ms-transition: left 0.5s ease;
+	-o-transition: left 0.5s ease;
+	transition: left 0.5s ease;
 }
 
 .slide-text {
@@ -759,6 +789,22 @@ i.wordpress  {
     background-position: center center;
 }
 /* ---- slide plugin module */
+.arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 100;
+
+	height: 20px;
+	margin-top: -10px;
+}
+
+.arrow-left {
+	left: 10px;
+}
+
+.arrow-right {
+	right: 10px;
+}
 
 .arrow-center {
 	position: absolute;
@@ -776,6 +822,11 @@ i.wordpress  {
   	-moz-animation:    bounce 5s infinite; /* Fx 5+ */
   	-o-animation:      bounce 5s infinite; /* Opera 12+ */
   	animation:         bounce 5s infinite; /* IE 10+, Fx 29+ */
+}
+
+.carousel.slide .carousel-control {
+	background: none;
+	border: none;
 }
 
 @-webkit-keyframes bounce {
@@ -809,4 +860,61 @@ i.wordpress  {
   20%  { top: 20px; }
   25%  { top: 0; }
   100% { top: 0; }
+}
+
+.fancyButton {
+	height: 50px;
+	width: 200px;
+	border: 1px solid #53A4CA;
+	border-radius: 5px;
+
+	text-align: center;
+	font-size: 20px;
+	background: transparent;
+	line-height: 50px;
+	color: #ffffff;
+}
+
+.fancyButton-center {
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+}
+
+.fancyButton-marginTop {
+	margin-top: 10%;
+}
+
+
+.internalFooter {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 300px;
+
+	color: #ffffff;
+}
+
+.internalFooter-col {
+	float: left;
+	width: 25%;
+	padding: 0 1em;
+}
+
+.internalFooter-link {
+	display: block;
+	padding: 0.5em 0;
+	width: 80%;
+	margin: 0 auto;
+
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+}
+
+.internalFooter-link:hover, .internalFooter-link:active {
+	text-decoration: none;
+	color: #ffffff;
+	border-width: 1px;
 }
